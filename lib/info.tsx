@@ -6,7 +6,7 @@ export const about = () => {
   return (
     <p>
       <b>"Si quieres aprender, empiezan por enseñar" </b>
-        Séneca
+        Séneca.
     </p>
   );
 };
