@@ -3,7 +3,7 @@ import { queryBuilder } from 'lib/planetscale';
 import { SignIn, SignOut } from './actions';
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from 'pages/api/auth/[...nextauth]';
-import { connect } from '@planetscale/database'
+
 import Form from './form';
 
 async function getGuestbook() {
