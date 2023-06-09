@@ -21,7 +21,7 @@ export default async function handler(
 
   const email = session.user.email as string;
   const name = session.user.name as string;
-  console.log("method post")
+  
 
   if (req.method === 'POST') {
     await queryBuilder

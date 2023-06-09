@@ -16,7 +16,7 @@ export default function Form() {
     const form = e.currentTarget;
     const input = form.elements.namedItem('entry') as HTMLInputElement;
 
-    const res = await fetch('/api/guestbook', {
+    const res = await fetch('https://blog-billyandrys.vercel.app/api/guestbook', {
       body: JSON.stringify({
         body: input.value,
       }),
