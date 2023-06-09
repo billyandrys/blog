@@ -29,7 +29,7 @@ export default function ViewCounter({
 
   useEffect(() => {
     const registerView = () =>
-      fetch(`api/views${slug}`, {
+      fetch(`/api/views/${slug}`, {
         method: 'POST',
       });
 
@@ -39,8 +39,8 @@ export default function ViewCounter({
   }, [slug]);
 
   return (
-    <div className="font-mono text-sm text-neutral-500 tracking-tighter">
+    <p className="font-mono text-sm text-neutral-500 tracking-tighter">
       {data ? `${views.toLocaleString()} views` : '​'}
-    </div>
+    </p>
   );
 }
