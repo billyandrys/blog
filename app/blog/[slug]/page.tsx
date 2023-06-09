@@ -66,7 +66,7 @@ export default async function Blog({ params }) {
 
   return (
     <section>
-      <script type="application/ld+json">
+      <script type="application/json">
         {JSON.stringify(post.structuredData)}
       </script>
       <h1 className="font-bold text-3xl font-serif max-w-[650px]">
