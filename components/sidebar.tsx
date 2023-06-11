@@ -16,9 +16,9 @@ const navItems = {
   '/blog': {
     name: 'blog',
   },
-  '/guestbook': {
-    name: 'Lista de visitas',
-  },
+  // '/guestbook': {
+  //   name: 'Lista de visitas',
+  // },
 };
 
 function Logo() {

@@ -13,17 +13,18 @@ import { name, about, bio, avatar } from 'lib/info';
 export const revalidate = 60;
 
 export default async function HomePage() {
-  let starCount, views, tweetCount;
+  // let  views
+  // //, tweetCount;
 
-  try {
-    [starCount, views, tweetCount] = await Promise.all([
-      getStarCount(),
-      getBlogViews(),
-      getTweetCount(),
-    ]);
-  } catch (error) {
-    console.error(error);
-  }
+  // try {
+  //   [ views] = await Promise.all([
+  //     //getStarCount(),
+  //     getBlogViews(),
+  //     //getTweetCount(),
+  //   ]);
+  // } catch (error) {
+  //   console.error(error);
+  // }
 
   return (
     <section>
