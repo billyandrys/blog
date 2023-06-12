@@ -30,33 +30,10 @@ export async function generateMetadata({
 
 
   
-  const ogImage = image
-    ? `https://leerob.io${image}`
-    : `https://leerob.io/api/og?title=${title}`;
-
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      type: 'article',
-      publishedTime,
-      url: `https://leerob.io/blog/${slug}`,
-      images: [
-        {
-          url: ogImage,
-        },
-      ],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-      images: [ogImage],
-    },
-  };
-}
+  
+  
+   
+  }
 
 export default async function Blog({ params }) {
   const post = allBlogs.find((post) => post.slug === params.slug);
@@ -80,8 +57,7 @@ export default async function Blog({ params }) {
           {post.publishedAt}
         </div>
         <div className="h-[0.2em] bg-neutral-50 dark:bg-neutral-800 mx-2" />
-        {/* <ViewCounter slug={post.slug} trackView /> */}
-        
+      
       </div>
       <div>
         <Mdx code={post.body.code} />
